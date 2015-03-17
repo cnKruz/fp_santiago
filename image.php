@@ -9,7 +9,6 @@
  */
 ?>
 <?php get_header(); ?>
-
 <div id="content" class="image-content">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -85,8 +84,7 @@
 					</div>
 				<?php } ?>
 			</header>
-
-			<div class="entry-content">
+						<div class="entry-content">
 				<div class="entry-attachment">
 					<div class="attachment">
 						<?php
@@ -100,8 +98,7 @@
 									break;
 							}
 							$k++;
-
-							// If there is more than 1 attachment in a gallery
+														// If there is more than 1 attachment in a gallery
 							if ( count( $attachments ) > 1 ) {
 								if ( isset( $attachments[ $k ] ) )
 									// get the URL of the next image attachment
@@ -117,22 +114,18 @@
 						
 						<a href="<?php echo esc_url( $next_attachment_url ); ?>" title="<?php the_title_attribute(); ?>" rel="attachment">
 						<?php echo wp_get_attachment_image( $post->ID, 'full' ); ?></a>
-
-						<?php if ( ! empty( $post->post_excerpt ) ) : ?>
+												<?php if ( ! empty( $post->post_excerpt ) ) : ?>
 						<div class="entry-caption">
 							<?php the_excerpt(); ?>
 						</div>
 						<?php endif; ?>
 					</div><!-- /attachment -->
-
-				</div><!-- /entry-attachment -->
-
-				<div class="entry-description">
+									</div><!-- /entry-attachment -->
+								<div class="entry-description">
 					<?php the_content(); ?>
 					<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'fairpixels' ) . '</span>', 'after' => '</div>' ) ); ?>
 				</div><!-- /entry-description -->							
-
-			</div><!-- /entry-content -->
+							</div><!-- /entry-content -->
 						
 			<nav class="nav-single">
 				<span class="nav-previous"><?php previous_image_link( false, __( '&larr; Previous' , 'fairpixels' ) ); ?></span>
@@ -149,7 +142,6 @@
 		<?php comments_template( '', true ); ?>	
 		
 	<?php endwhile; // end of the loop. ?>
-
-</div><!-- /content -->	
+	</div><!-- /content -->	
 <?php get_sidebar(); ?>		
 <?php get_footer(); ?>

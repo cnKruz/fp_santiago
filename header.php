@@ -11,10 +11,8 @@
  */
 ?>
 <!DOCTYPE html>
-
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
-
 <![endif]-->
 <!--[if IE 7]>
 <html id="ie7" <?php language_attributes(); ?>>
@@ -46,13 +44,11 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'fairpixels' ), max( $paged, $page ) );
 	?>
 </title>
-
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
-
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -67,7 +63,6 @@
 	wp_head();
 ?>
 </head>
-
 <body <?php body_class(); ?>>
 	<div id="container" class="hfeed">
 		<header id="header">	
@@ -101,8 +96,7 @@
 						<?php } ?>
 						<?php if (fp_get_settings( 'fp_fb_url' )){ ?>
 							<li class="fb"><a href="<?php echo fp_get_settings( 'fp_fb_url' ); ?>"><i class="fa fa-facebook"></i></a></li>
-
-						<?php } ?>
+													<?php } ?>
 						<?php if (fp_get_settings( 'fp_gplus_url' )){ ?>
 							<li class="gplus"><a href="<?php echo fp_get_settings( 'fp_gplus_url' ); ?>"><i class="fa fa-google-plus"></i></a></li>
 						<?php } ?>
@@ -130,22 +124,15 @@
 			</div>
             </div>
 			<div class="menu-section clearfix">
-
-				<nav class="primary-menu clearfix">
-
-					<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '0', 'menu_class' => 'sf-menu', 'fallback_cb' => 'fp_main_menu_fallback') ); ?>
-
-				</nav>
-
-			</div>
+							<nav class="primary-menu clearfix">
+									<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '0', 'menu_class' => 'sf-menu', 'fallback_cb' => 'fp_main_menu_fallback') ); ?>
+									</nav>
+							</div>
             <div class="espa">
-
-            </div>
-
-            <div class="showForex">
+                        </div>
+                        <div class="showForex">
                 <div id="dolar" style=" width:26%; height:100%; float:left;">
-
-                	<div id="tit" style="width:48%; height:100%; float:left; border-right:1px solid #CCC; text-align:right; font-weight:bold;">
+                                	<div id="tit" style="width:48%; height:100%; float:left; border-right:1px solid #CCC; text-align:right; font-weight:bold;">
                     	<div id="tt" style="height:15%; width:100%;">
                         </div>
                     	<div id="t" style="height:35%; width:100%;">
@@ -248,10 +235,8 @@
                 </div>
             </div>
 <script type="text/javascript">
-
 	$('.showForex').load('http://www.google.com');
-
-</script>
+	</script>
 		</header>
 	<div id="main">	
 		<?php
@@ -267,8 +252,6 @@
 				if ( $fp_show_slider == 1 ){				
 					get_template_part( 'includes/slider' );				
 				}
-
-			}*/
+							}*/
 		?>
-
-	<div class="content-wrap">	
+			<div class="content-wrap">	

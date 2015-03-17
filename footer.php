@@ -1,122 +1,19 @@
 <?php
-
-
-
-
-
-
-
 /**
-
-
-
-
-
-
-
  * The template for displaying the footer.
-
-
-
-
-
-
-
- *
-
-
-
-
-
-
-
- * Contains the closing of the id=main div and all content after
-
-
-
-
-
-
-
- *
-
-
-
-
-
-
-
- * @package  WordPress
-
-
-
-
-
-
-
- * @file     footer.php
-
-
-
-
-
-
-
- * @author   FairPixels
-
-
-
-
-
-
-
- * @link 	 http://fairpixels.com
-
-
-
-
-
-
-
- */
-
-
-
-
-
-
-
+  *
+  * Contains the closing of the id=main div and all content after
+  *
+  * @package  WordPress
+  * @file     footer.php
+  * @author   FairPixels
+  * @link 	 http://fairpixels.com
+  */
 ?>
-
-
-
-
-
-
-
 		</div><!-- /content-wrap -->
-
-
-
-
-
-
-
-	</div><!-- /main -->
-
-
-
-    
-
-
-
-    <div id="publicidad">
-
-
-
-    	<div id="pArriba" style="width:100%; height:15%;">
-
-				<div id="pi">
+        	</div><!-- /main -->
+            
+        				<div id="pi">
                 	<div class="pia">
                     </div>
                     <div class="piab">
@@ -131,13 +28,8 @@
                     <div class="piab">
                     </div>
                 </div>
-
-        </div>
-
-
-
-        <div id="pAbajo" style="width:100%; height:85%; overflow:hidden;">
-		
+                        </div>
+                        		
         <div id="pubCont" style="width:95%; height:100%; overflow:hidden; position:relative; left:2%;">
 		<div id="allM" style="width:100%; height:100%;">
                 <div style="position:relative; height:100%;">
@@ -196,10 +88,8 @@
             </div>
         </div>
         </div>
-
-        </div>
-
-	<script type="text/javascript">
+                </div>
+        	<script type="text/javascript">
 		var $j = jQuery.noConflict();
 		$j( document ).ready(function() {
 		  // Handler for .ready() called.
@@ -262,50 +152,25 @@
 	
 	/**/
 		</script>
-
-</div>
-
-
-
-
-
-
-
+        </div>
 	<div id="footerInfo">
-
-    	<div id="footerTop">
-
-        	<div id="topLeftLeft">
-
-            </div>
-
-        	<div id="topLeft">
-
-            	<ul id="ulTopLeft">
-
-                	<li class="concaTit">CONCANACO SERVYTUR</li>
-
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-
-                    <li class="sig">Siguenos:</li>
-
-                    <li class="socI"><a href="./?p=498"><img src="images/face.png" width="2%"/></a></li>
-
-                    <li class="socI"><a href="#"><img src="images/twit.png" width="2%"/></a></li>
-
-                    <li class="socI"><a href="#"><img src="images/puntos.png" width="2%"/></a></li>
-
-                    <li class="socI"><a href="#"><img src="images/you.png" width="2%"/></a></li>
-
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-
-                    <li class="newsL">NEWSLETTER</li>
-
-                </ul>
-
-            </div>
-
-            <div id="topRight">
+        	<div id="footerTop">
+                	<div id="topLeftLeft">
+                        </div>
+                    	<div id="topLeft">
+                        	<ul id="ulTopLeft">
+                                	<li class="concaTit">CONCANACO SERVYTUR</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="sig">Siguenos:</li>
+                                        <li class="socI"><a href="./?p=498"><img src="images/face.png" width="2%"/></a></li>
+                                        <li class="socI"><a href="#"><img src="images/twit.png" width="2%"/></a></li>
+                                        <li class="socI"><a href="#"><img src="images/puntos.png" width="2%"/></a></li>
+                                        <li class="socI"><a href="#"><img src="images/you.png" width="2%"/></a></li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li class="newsL">NEWSLETTER</li>
+                                    </ul>
+                            </div>
+                        <div id="topRight">
                 <a href="#" onclick="window.scrollBy(0,0);">
                     <div id="bInicio">
                         <div id="tIni">
@@ -317,165 +182,59 @@
                     </div>
                 </a>
             </div>
-
-        </div>
-
-        <div id="footerMed">
-
-        	<div id="mLeft">
-
-            </div>
-
-        	<div id="mMed">
-
-            	<div id="med1">
-
-                </div>
-
-                <div id="med2">
-
-                	<div id="medio1" style="border-right:1px solid #C00;" class="enMedio">
-
-                    	<?php echo do_shortcode('[do_widget id="nav_menu-2"]');?>
-
                     </div>
-
-                    <div id="medio2" style="border-right:1px solid #C00;" class="enMedio">
-
-                    	<?php echo do_shortcode('[do_widget id="nav_menu-3"]');?>
-
-                    </div>
-
-                    <div id="medio3" style="border-right:1px solid #C00;" class="enMedio">
-
-                    	<?php echo do_shortcode('[do_widget id="nav_menu-4"]');?>
-
-                    </div>
-
-                    <div id="medio4" style="border-right:1px solid #C00;" class="enMedio">
-
-                    	<?php echo do_shortcode('[do_widget id="nav_menu-5"]');?>
-
-                    </div>
-
-                    <div id="medio5" style="border-right:1px solid #C00;" class="enMedio">
-
-                    	<?php echo do_shortcode('[do_widget id="nav_menu-6"]');?>
-
-                    </div>
-
-                    <div id="medio6" class="enMedio">
-
-                    	<div id="topMedio6">
-
-                        	<?php echo do_shortcode('[do_widget id="nav_menu-7"]');?>
-
+                <div id="footerMed">
+                	<div id="mLeft">
                         </div>
-
-                        <div id="botMedio6">
-
-                        <div id="appsIcons">
-
-                        	<a href="#"><img src="images/apple.png" class="appIcon"/></a>
-
-                            &nbsp;
-
-                            <a href="#"><img src="images/android.png" class="appIcon"/></a>
-
+                    	<div id="mMed">
+                        	<div id="med1">
+                                </div>
+                                <div id="med2">
+                                	<div id="medio1" style="border-right:1px solid #C00;" class="enMedio">
+                                        	<?php echo do_shortcode('[do_widget id="nav_menu-2"]');?>
+                                            </div>
+                                        <div id="medio2" style="border-right:1px solid #C00;" class="enMedio">
+                                        	<?php echo do_shortcode('[do_widget id="nav_menu-3"]');?>
+                                            </div>
+                                        <div id="medio3" style="border-right:1px solid #C00;" class="enMedio">
+                                        	<?php echo do_shortcode('[do_widget id="nav_menu-4"]');?>
+                                            </div>
+                                        <div id="medio4" style="border-right:1px solid #C00;" class="enMedio">
+                                        	<?php echo do_shortcode('[do_widget id="nav_menu-5"]');?>
+                                            </div>
+                                        <div id="medio5" style="border-right:1px solid #C00;" class="enMedio">
+                                        	<?php echo do_shortcode('[do_widget id="nav_menu-6"]');?>
+                                            </div>
+                                        <div id="medio6" class="enMedio">
+                                        	<div id="topMedio6">
+                                                	<?php echo do_shortcode('[do_widget id="nav_menu-7"]');?>
+                                                    </div>
+                                                <div id="botMedio6">
+                                                <div id="appsIcons">
+                                                	<a href="#"><img src="images/apple.png" class="appIcon"/></a>
+                                                        &nbsp;
+                                                        <a href="#"><img src="images/android.png" class="appIcon"/></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                <div id="med3">
+                                </div>
+                                                        <div id="mRight">
                         </div>
-
-                        </div>
-
                     </div>
-
-                </div>
-
-                <div id="med3">
-
-                </div>
-
-                
-
+        		<div id="footerBot">
+                	<ul id="ulBotFooter">
+                            	<li class="concaTitBot">contacto@concanaco.com.mx</li>
+                                        <li class="sig">2015 Concanaco Servytur México.	DERECHOS RESERVADOS</li>
+                                        <li><a href="#">AVISO DE PRIVACIDAD</a></li>
+                                    </ul>
+                        </div>
             </div>
-
-            <div id="mRight">
-
-            </div>
-
-        </div>
-
-		<div id="footerBot">
-
-        	<ul id="ulBotFooter">
-
-                	<li class="concaTitBot">contacto@concanaco.com.mx</li>
-
-                    <li class="sig">2015 Concanaco Servytur México.	DERECHOS RESERVADOS</li>
-
-                    <li><a href="#">AVISO DE PRIVACIDAD</a></li>
-
-                </ul>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-</div><!-- /container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php wp_footer(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div><!-- /container -->
+    <?php wp_footer(); ?>
 </body>
-
-
-
 <script type="text/javascript">
-
-	
-
-	//document.body.style.width = window.innerWidth + 'px';
-
-	//alert(window.innerWidth);
-
-</script>
-
-
-
-
-
-
-
+    	//alert(window.innerWidth);
+        </script>
 </html>

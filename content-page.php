@@ -8,7 +8,6 @@
  * @link 	 http://fairpixels.com
  */
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="entry-header">
@@ -19,5 +18,4 @@
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'fairpixels' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- /entry-content -->
-
-</article><!-- /post-<?php the_ID(); ?> -->
+	</article><!-- /post-<?php the_ID(); ?> -->
