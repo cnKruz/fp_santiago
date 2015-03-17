@@ -20,7 +20,6 @@ session_start();
 								
 	include_once( trailingslashit( get_stylesheet_directory() ) . 'framework/lib/recaptcha/recaptchalib.php' );							
 if(isset($_POST['fp_submit'])) {
-
 		//validate sender name
 		if(trim($_POST['sender_name']) === '') {
 			$name_error = 'Please enter your name.';
@@ -62,7 +61,6 @@ if(isset($_POST['fp_submit'])) {
                                         $_SERVER["REMOTE_ADDR"],
                                         $_POST["recaptcha_challenge_field"],
                                         $_POST["recaptcha_response_field"]);
-
 		if (!$resp->is_valid) {                
 			# set the error code so that we can display it				
 			$captcha_error = __('Please enter code correctly.', 'fairpixels');
@@ -83,7 +81,6 @@ if(isset($_POST['fp_submit'])) {
 			if (!isset($subject) || ($subject == '') ){
 				$subject = 'Contact Message From '.$name;			
 			}
-
 			$body = "Name: $name \n\nEmail: $email \n\nComments: $message";
 			$headers = 'From: '.$name.' <'.$email_to.'>' . "\r\n" . 'Reply-To: ' . $email;
 			
@@ -92,11 +89,8 @@ if(isset($_POST['fp_submit'])) {
 		}
 	
 	} 
-
 ?>
-
 <?php get_header(); ?>
-
 	<script type="text/javascript">
 	<!--//--><![CDATA[//><!--
 		jQuery(document).ready(function() {
@@ -259,7 +253,6 @@ if(isset($_POST['fp_submit'])) {
 									<i class="icon-info-sign"></i>
 									<a href="javascript:Recaptcha.showhelp()"><?php _e('Help', 'fairpixels'); ?></a></div>
 								</div>
-
 								<script type="text/javascript"
 									src="http://www.google.com/recaptcha/api/challenge?k=<?php echo $fp_recaptcha_public_key; ?>">
 								</script>
@@ -288,6 +281,5 @@ if(isset($_POST['fp_submit'])) {
 			
 	</div><!-- /contact-form-wrap -->
 </div><!-- /content -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

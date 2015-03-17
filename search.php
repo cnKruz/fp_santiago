@@ -13,7 +13,6 @@
 			<div class="archive">
 				
 					<?php if ( have_posts() ) : ?>
-
 						<header class="archive-header">
 							<h2 class="archive-title">
 								<?php printf( __( 'Resultados: %s', 'fairpixels' ), '<span>' . get_search_query() . '</span>' ); ?>
@@ -38,14 +37,12 @@
 						<?php fp_pagination(); ?>
 					
 					<?php else : ?>
-
 						<article id="post-0" class="post no-results not-found">
 							<header class="archive-header">
 								<h3 class="archive-title">								
 									<?php _e( 'Nothing Found', 'fairpixels' ); ?>
 								</h3>
 							</header><!-- /entry-header -->
-
 							<div class="entry-content">
 								<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'fairpixels' ); ?></p>
 								<div class="box-550">
@@ -53,11 +50,9 @@
 								</div>
 							</div><!-- /entry-content -->
 						</article><!-- /post-0 -->
-
 					<?php endif; ?>
 				</div><!-- /search-results -->
 		</div><!-- /content -->
-
 <?php get_sidebar('left'); ?>		
 <?php get_sidebar('right'); ?>
 <?php get_footer(); ?>
